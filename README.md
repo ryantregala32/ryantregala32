@@ -8,7 +8,7 @@
   <li>
     <a href="https://github.com/ryantregala32/Lebron_James_Shooting_Accuracy">Lebron James Shooting Accuracy</a>
     <p>
-      Analyzed NBA shooting data to explore trends and accuracy. Tools: Python, Pandas, Matplotlib.
+      Analyzed NBA shooting data to explore trends and accuracy. Tools: Python, Pandas, Matplotlib, Seaborn.
     </p>
   </li>
   <!-- Add more projects here -->
