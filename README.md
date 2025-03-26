@@ -11,10 +11,15 @@
       Analyzed NBA shooting data to explore trends and accuracy. Tools: Python, Pandas, Matplotlib, Seaborn.
     </p>
   </li>
-  <!-- Add more projects here -->
+  <li>
+    <a href="https://github.com/ryantregala32/COGS108_Repo/blob/main/FinalReport.ipynb">Anime Ratings Prediction</a>
+    <p>
+      Built a machine learning model to predict anime ratings using MyAnimeList user data. Tools: Python, Pandas, Scikit-learn, Matplotlib.
+    </p>
+  </li>
 </ul>
 
-<h2>🤳 Connect with me:</h2>
+<h2>🤞 Connect with me:</h2>
 <p>
   <a href="https://www.youtube.com/@RyanRegala-c8f" target="_blank">
     <img alt="Ryan Regala | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />
@@ -28,5 +33,6 @@
 </p>
 
 <p>🌱 I’m currently learning: Machine Learning, Data Automation</p>
-<p>💬 Ask me about: Python, Data Visualization, and Basketball Analytics!</p>
+<p>💬 Ask me about: Python, Data Visualization, Data Engineering, and Basketball and Anime Analytics!</p>
 <p>⚡ Fun fact: I love creating data insights from sports stats!</p>
+
