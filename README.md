@@ -1,6 +1,6 @@
 <h1>Hi, I'm Ryan! 👋</h1>
 <p>
-  I'm a Data Science and Computer Science enthusiast passionate about solving real-world problems through technology. I love diving into data, programming, and building tools that improve efficiency and automate workflows.
+  I'm a Computer Science enthusiast passionate about solving real-world problems through technology. I love diving into data, programming, game design, UI/UX, frontend development, and building tools that improve efficiency.
 </p>
 
 <h2>👨‍💻 Featured Projects</h2>
@@ -45,15 +45,15 @@
 
 <h2>🌱 Currently Learning</h2>
 <p>
-  Machine Learning, Data Automation, and Video Game Development
+  Video Game Development, UI Design
 </p>
 
 <h2>💬 Ask Me About</h2>
 <p>
-  Python, Data Visualization, Programming Projects, UI Design, Video Game Development, or Sports Analytics!
+  Python, C++, C##, Programming Projects, UI Design, or Video Game Development!
 </p>
 
 <h2>⚡ Fun Fact</h2>
 <p>
-  I love using code to turn sports stats into insights—and building things that just work.
+  I love to walk around places and develop my programming skills.
 </p>
