@@ -625,3 +625,19 @@ body:not(.user-is-tabbing) a:focus {
         height: 220px;
     }
 }
+
+.video-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff; /* You can change this to match your site's color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.video-btn:hover {
+    background-color: #0056b3; /* Darker blue when you hover over it */
+    transform: scale(1.05);    /* Makes the button slightly bigger on hover */
+}
