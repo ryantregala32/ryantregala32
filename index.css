@@ -356,3 +356,24 @@ a {
     left: 0;
     font-weight: bold;
 }
+
+/* --------------------------------------- */
+/* ----- Interactive Prototype Spacing ----- */
+/* --------------------------------------- */
+
+/* Ensures the Figma embed container fills the row and adds top space */
+.prototype-embed-container {
+    width: 100%;
+    margin-top: var(--gutter-normal); /* Adds space between text and embed */
+    background: var(--black);
+    border: var(--border-light);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Optional: Forces the iframe to be responsive on smaller screens */
+@media(max-width: 600px) {
+    .prototype-embed-container iframe {
+        height: 400px; /* Shorter height for mobile phones */
+    }
+}
