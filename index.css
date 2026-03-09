@@ -1,9 +1,6 @@
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
-body {
-    background: red !important;
-}
 
 @font-face {
     font-family: 'Hk Grotesk';
