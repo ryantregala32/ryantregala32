@@ -1,66 +1,52 @@
-/* ----- Basic Setup & Variables ----- */
-:root {
-    --font-size-small: 1.8rem;
-    --font-size-normal: 2.2rem;
-    --font-size-large: 5.5rem;
-    --font-stack: 'Hk Grotesk', sans-serif;
-    --black: #000;
-    --pink: #ff3258;
-    --white: #f0e9f2;
-    --white-1: #e5e5e6da;
-    --border-light: 1px solid rgb(36, 35, 35);
-    --gutter-medium: 6rem;
-    --gutter-normal: 3rem;
+/* --- Custom Layouts for Ryan's Portfolio --- */
+
+/* Unity Game side-by-side fix */
+.unity-game-layout { 
+    display: flex; 
+    gap: 5rem; 
+    align-items: flex-start; 
+    margin-bottom: 25rem; 
 }
-
-html { font-size: 62.5%; box-sizing: border-box; scroll-behavior: smooth; }
-body { font-size: var(--font-size-small); font-family: var(--font-stack); color: var(--white-1); background: var(--black); line-height: 1.7; overflow-x: hidden; }
-
-.row { max-width: 1180px; margin: 0 auto; padding: 0 3rem; }
-section { padding: 12rem 0; border-bottom: var(--border-light); }
-
-/* ----- Headlines ----- */
-h1, h2, h3 { font-family: 'Jost', sans-serif; color: var(--white); line-height: 1.2; }
-h2 { font-size: var(--font-size-large); margin-bottom: 6rem; }
-h2::after { content: ''; display: block; height: 2px; width: 10rem; background: var(--pink); margin: 2rem 0; }
-h3 { font-size: 3.6rem; margin-bottom: 2.5rem; }
-
-/* ----- Buttons ----- */
-.video-btn {
-    display: inline-block;
-    padding: 1rem 4.2rem;
-    background: var(--pink);
-    color: var(--white);
-    text-decoration: none;
-    border: 1px solid var(--pink);
-    transition: all 0.3s;
-    font-weight: bold;
-    cursor: pointer;
-}
-.video-btn:hover { background: transparent; color: var(--pink); }
-
-.link__text { color: var(--white); text-decoration: none; font-size: 1.8rem; }
-.link__text:hover { color: var(--pink); }
-
-/* ----- Unity Game Layout ----- */
-.unity-game-layout { display: flex; gap: 5rem; align-items: flex-start; margin-bottom: 25rem; }
 .unity-game__info { flex: 1; }
 .unity-game__preview { flex: 1.5; }
 .unity-game__skills { list-style: none; margin: 2rem 0; }
-.unity-game__skills li::before { content: '• '; color: var(--pink); }
-.unity-game__icon { width: 150px; margin-top: 3rem; border-radius: 15px; overflow: hidden; }
-.game-img { width: 100%; border-radius: 4px; border: var(--border-light); }
+.unity-game__skills li::before { content: '• '; color: var(--pink); font-weight: bold; }
+.unity-game__icon { width: 140px; margin-top: 3rem; border-radius: 15px; overflow: hidden; }
+.game-img { width: 100%; border-radius: 4px; border: var(--border-light); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
 
-/* ----- Prototype Window ----- */
-.prototype-window { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; overflow: hidden; margin: 4rem 0; }
+/* Figma Prototype Window Mockup */
+.prototype-window { 
+    background: #1a1a1a; 
+    border: 1px solid #333; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    margin: 4rem 0; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5); 
+}
 .window-header { background: #222; padding: 12px; display: flex; align-items: center; }
 .dot { height: 12px; width: 12px; border-radius: 50%; margin-right: 8px; }
-.red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+.red { background: #ff5f56; } 
+.yellow { background: #ffbd2e; } 
+.green { background: #27c93f; }
+.window-title { margin: 0 auto; color: #888; font-size: 1.2rem; }
 .prototype-embed { position: relative; padding-bottom: 60%; height: 0; }
 .prototype-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
 
-/* ----- Mobile Fixes ----- */
-@media(max-width: 900px) {
-    .unity-game-layout { flex-direction: column; }
-    h2 { font-size: 3.6rem; }
+/* Global Video Button Style */
+.video-btn { 
+    display: inline-block; 
+    padding: 1rem 4.2rem; 
+    background: var(--pink); 
+    color: var(--white); 
+    text-decoration: none; 
+    border: 1px solid var(--pink); 
+    transition: 0.3s; 
+    font-weight: bold; 
+    margin-top: 2rem; 
+}
+.video-btn:hover { background: transparent; color: var(--pink); }
+
+/* Mobile Responsiveness */
+@media(max-width: 900px) { 
+    .unity-game-layout { flex-direction: column; } 
 }
