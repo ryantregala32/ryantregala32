@@ -276,8 +276,10 @@ a{
     flex:0 0 30%;
 }
 
-.nature-prototype{
-    align-items:center;
+.nature-prototype .work__text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 .work__list{
     list-style-position:inside;
