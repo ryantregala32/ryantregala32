@@ -1,308 +1,161 @@
 <!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
+  Portfolio Template designed and developed by Nisar Hassan Naqvi
+  Github Repo: https://github.com
+  Customized by Ryan Tregala
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Ryan Regala | A Video Game Designer/Frontend Developer.
-  </title>
-
-  <meta name="description" content="Cognitive Science Student at UC San Diego, I have developed a few data science projects and on a video game.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Ryan Regala, Game Development, UI/UX Design, C#, C++, Java, Python" />
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Tregala | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body id="top">
 
-<body>
+  <!-- ***** Navigation ***** -->
+  <nav class="nav row">
+    <ul class="nav__items">
+      <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+      <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+      <li class="nav__item"><a href="#teaching" class="nav__link">Teaching</a></li>
+      <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
+  <header class="header">
     <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#teaching" class="nav__link">Teaching & Mentorship</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Ryan Regala</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Programmer, UX Designer, and Software Developer based in La Jolla, California.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <h1 class="heading-primary">Ryan Tregala</h1>
+        <p>Software Developer & Instructional Designer</p>
+        <a href="#work" class="video-btn">View My Work</a>
       </div>
     </div>
   </header>
 
-  <main role="main">
+  <main>
+    <!-- ***** Work Section ***** -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Featured Projects</h2>
 
-    <!-- ***** Work ***** -->
-
-<section class="work" id="work">
-  <div class="row">
-    <h2>My Work</h2>
-    <div class="work__boxes">
-
-      <!-- Project 1 -->
-      <div class="work__box">
-        <div class="work__text">
-          <h3>Habitat Defenders</h3>
-          <p>
-            A game similar to Plants vs. Zombies, but with native species vs. invasive species battling in a tower defense format. This is an environmentally themed game built in Unity.
-          </p>
-          <ul class="work__list">
-            <li>C#</li>
-            <li>Unity</li>
-            <li>UI Design</li>
-            <li>Debugging</li>
-          </ul>
-
-          <div class="work__links">
-            <a href="https://ndtech.itch.io/habitat-defenders-2025" class="link__text" target="_blank" title="Play Habitat Defenders">
-              Play Game <span>&rarr;</span>
-            </a>
-            <a href="https://ndtech.itch.io/habitat-defenders-2025" target="_blank" title="Play Habitat Defenders">
-              <img src="images/screenshot-2025-08-22-at-105735.png" class="work__code" alt="Itch.io Page">
-            </a>
+        <!-- PROJECT 1: Unity Game (Split Layout) -->
+        <div class="work__box unity-game-layout">
+          <div class="unity-game__info">
+            <h3>Native vs. Invasive Species</h3>
+            <p>A game similar to Plants vs. Zombies, but with native species vs. invasive species battling in a tower defense format. Built in Unity.</p>
+            <ul class="unity-game__skills">
+              <li>C#</li><li>Unity</li><li>UI Design</li><li>Debugging</li>
+            </ul>
+            <a href="https://github.com" class="link__text">Play Game <span>&rarr;</span></a>
+            <div class="unity-game__icon">
+              <!-- Ensure this image exists in your folder -->
+              <img src="./images/game-icon.png" alt="Game Icon">
+            </div>
+          </div>
+          <div class="unity-game__preview">
+            <img src="./images/game-screenshot.jpg" alt="Unity Gameplay" class="game-img">
           </div>
         </div>
-        <div class="work__image-box">
-          <img src="./images/screenshot-2025-08-22-at-105011.png" class="work__image" alt="Habitat Defenders Screenshot">
-        </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="work__box">
-        <div class="work__text">
-          <h3>LeBron James Shooting Accuracy (2023)</h3>
-          <p>
-            Analyzed NBA shooting data to uncover trends in performance and accuracy.
-          </p>
-          <ul class="work__list">
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-          </ul>
-
-          <div class="work__links">
-            <a href="https://github.com/ryantregala32/Lebron_James_Shooting_Accuracy" class="link__text" target="_blank" title="View Source Code">
-              View Source Code <span>&rarr;</span>
-            </a>
-            <a href="https://github.com/ryantregala32/Lebron_James_Shooting_Accuracy" target="_blank" title="View Source Code">
-              <img src="./images/github.svg" class="work__code" alt="GitHub Repository">
-            </a>
+        <!-- PROJECT 2: Interactive Prototype (Window Layout) -->
+        <div class="work__box">
+          <div class="work__text">
+            <h3>Interactive UI Prototype</h3>
+            <p><strong>The Challenge:</strong> Designing an intuitive interface for new users to navigate complex data.</p>
+            <p><strong>The Solution:</strong> A high-fidelity prototype focused on clear visual hierarchy.</p>
+            
+            <div class="prototype-window">
+              <div class="window-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="window-title">Inspo - Interactive Sketches</span>
+              </div>
+              <div class="prototype-embed">
+                <iframe src="https://embed.figma.com" allowfullscreen></iframe>
+              </div>
+            </div>
+            <a href="https://www.figma.com" target="_blank" class="video-btn">Open Full Prototype ↗</a>
           </div>
         </div>
-        <div class="work__image-box">
-          <img src="./images/screenshot-2025-08-08-081259.png" class="work__image" alt="LeBron James Shooting Accuracy Project">
-        </div>
       </div>
+    </section>
 
-      <!-- Project 3 -->
-      <div class="work__box">
-        <div class="work__text">
-          <h3>Anime Ratings Predictor</h3>
-          <p>
-            Built a machine learning model to predict anime ratings based on MyAnimeList user data.
-          </p>
-          <ul class="work__list">
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Scikit-learn</li>
-          </ul>
-
-          <div class="work__links">
-            <a href="https://github.com/ryantregala32/COGS108_Repo" class="link__text" target="_blank" title="View Source Code">
-              View Source Code <span>&rarr;</span>
-            </a>
-            <a href="https://github.com/ryantregala32/COGS108_Repo" target="_blank" title="View Source Code">
-              <img src="./images/github.svg" class="work__code" alt="GitHub Repository">
-            </a>
-          </div>
-        </div>
-        <div class="work__image-box">
-          <img src="./images/screenshot-2025-08-08-082353.png" class="work__image" alt="Anime Ratings Predictor Project">
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ***** Interactive UI Prototype Section ***** -->
-<section class="row work__box">
-  <div class="work__content">
-    <div class="work__text">
-      <h2>Interactive UI Prototype</h2>
-      <p class="project-subtitle">UX/UI Design & Prototyping</p>
-      
-      <p>
-        <strong>The Challenge:</strong> Designing an intuitive interface that simplifies 
-        complex navigation for new users.
-      </p>
-      <p>
-        <strong>The Solution:</strong> An interactive prototype focused on clear visual 
-        hierarchy and a streamlined user journey.
-      </p>
-
-      <!-- Mockup Wrapper for the "Website" Feel -->
-      <div class="prototype-window">
-        <div class="window-header">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="window-title">Inspo - Interactive Sketches</span>
-        </div>
-        <div class="prototype-embed">
-          <iframe 
-            src="https://embed.figma.com" 
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-      
-      <a href="https://www.figma.com" target="_blank" class="video-btn">Open Full Prototype ↗</a>
-    </div>
-  </div>
-</section>
-
-   <!-- ***** About ***** -->
-
+    <!-- ***** About Me ***** -->
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I’m a Computer Science enthusiast passionate about creating engaging 
-              and immersive video game experiences. 
-              I love combining programming, game design, and UI/UX to craft gameplay 
-              that feels intuitive and exciting. Alongside game development, 
-              I enjoy working on frontend systems, interactive interfaces, and tools that boost efficiency for both developers and players.
-              Additionally, I go to UCSD where I study Cognitive Science with a specialization in Design and Interaction.
-              I currently am a senior and an intern at the Serious Games for Global Impact Program funded by Qualcomm Institute.
-              I was also an intern at the Neurodiversity in Tech Program where I helped create the game Habitat Defenders.
+              I’m a Computer Science enthusiast passionate about creating immersive video game experiences. 
+              Currently a senior at <strong>UCSD</strong> studying Cognitive Science with a specialization in Design and Interaction.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="https://drive.google.com/file/d/1uhem2ygpoWrtaFlPfATymukdOTFAn4QC/view?usp=sharing" class="btn">My Resume</a>
+            <p>
+              I am an intern at the Serious Games for Global Impact Program at the Qualcomm Institute and previously helped create <em>Habitat Defenders</em> during my internship at the Neurodiversity in Tech Program.
+            </p>
+            <a href="https://drive.google.com" target="_blank" class="btn">My Resume</a>
           </div>
-
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/20241031_093748.jpg" alt="" />
+            <img class="about__photo" src="./images/20241031_093748.jpg" alt="Ryan Tregala" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Teaching Section ***** -->
+    <section class="teaching" id="teaching">
+      <div class="row">
+        <h2>Teaching & Mentorship</h2>
+        <div class="teaching__content">
+          <div class="teaching__text">
+            <p>
+              I enjoy supporting learning through peer collaboration and instructional demonstrations. I focus on breaking down programming concepts into clear, step-by-step processes for beginners.
+            </p>
+            <a href="videos.html" class="video-btn">View Full Teaching Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Contact ***** -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>Have a question or want to work together? Feel free to reach out!</p>
+          <a href="mailto:ryanregala512@gmail.com" class="btn">ryanregala512@gmail.com</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ***** Teaching & Mentorship ***** -->
-<section class="teaching" id="teaching">
-  <div class="row">
-    <h2>Teaching & Mentorship</h2>
-
-    <div class="teaching__content">
-      <div class="teaching__text">
-        <p>
-          While I do not have formal teaching experience, I enjoy supporting learning
-          through peer collaboration and instructional demonstrations. I focus on
-          breaking down programming concepts into clear, step-by-step processes
-          that are easy for beginners to follow.
-        </p>
-        <!-- This button now takes them to the separate page -->
-        <a href="videos.html" class="btn btn--blue">View Full Teaching Portfolio</a>
-        <link rel="stylesheet" href="style.css">
-
-      </div>
-    </div>
-  </div>
-</section>
-        
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Here's my contact information if you just want to say hi or keep in-touch.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:ryanregala512@gmail.com" class="btn">ryanregala512@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
   <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://github.com/ryantregala32/" title="Link to Github Profile">
+          <a href="https://github.com/" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/ryan-t-regala/">
+          <a href="https://www.linkedin.com">
             <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+        &copy; 2026 Ryan T Regala. Template designed by <a href="https://nisar.dev" class="link">Nisar</a>.
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+
   <script src="./index.js"></script>
 </body>
-
 </html>
