@@ -2,6 +2,11 @@
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
 
+body{
+background:black;
+color:white;
+}
+
 @font-face {
     font-family: 'Hk Grotesk';
     font-style: normal;
