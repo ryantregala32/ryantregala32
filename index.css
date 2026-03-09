@@ -1,443 +1,66 @@
-/* --------------------------------------- */
-/* ----- Basic Setup ----- */
-/* --------------------------------------- */
-
-@font-face {
-    font-family: 'Hk Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('truetype');
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
+/* ----- Basic Setup & Variables ----- */
 :root {
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
-    --font-size-medium: 2.8rem;
-    --font-size-medium-1: 3.6rem;
     --font-size-large: 5.5rem;
-    --font-size-huge: 7.5rem;
     --font-stack: 'Hk Grotesk', sans-serif;
-
-    --line-height-normal: 1.7;
-    --line-height-small: 1.2;
-
     --black: #000;
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
-
-    --container-max-width: 1180px;
-    --container-normal-width: 800px;
-    --container-medium-width: 700px; 
-    --container-small-width: 500px;
-
-    --gutter-huge: 12rem;
+    --border-light: 1px solid rgb(36, 35, 35);
     --gutter-medium: 6rem;
     --gutter-normal: 3rem;
-    --gutter-small-1: 2.5rem;
-    --gutter-small: 2rem;
-
-    --border-light: 1px solid rgb(36, 35, 35);
 }
 
-html {
-    font-size: 62.5%; /* 1rem = 10px */
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+html { font-size: 62.5%; box-sizing: border-box; scroll-behavior: smooth; }
+body { font-size: var(--font-size-small); font-family: var(--font-stack); color: var(--white-1); background: var(--black); line-height: 1.7; overflow-x: hidden; }
 
-@media(max-width: 1000px) {
-    html {
-        font-size: 52%;
-    }
-}
+.row { max-width: 1180px; margin: 0 auto; padding: 0 3rem; }
+section { padding: 12rem 0; border-bottom: var(--border-light); }
 
-body {
-    font-size: var(--font-size-small);
-    font-family: var(--font-stack);
-    font-weight: 400;
-    color: var(--white-1);
-    line-height: var(--line-height-normal);
-    background: var(--black);
-    overflow-x: hidden;
-}
+/* ----- Headlines ----- */
+h1, h2, h3 { font-family: 'Jost', sans-serif; color: var(--white); line-height: 1.2; }
+h2 { font-size: var(--font-size-large); margin-bottom: 6rem; }
+h2::after { content: ''; display: block; height: 2px; width: 10rem; background: var(--pink); margin: 2rem 0; }
+h3 { font-size: 3.6rem; margin-bottom: 2.5rem; }
 
-.row {
-    max-width: var(--container-max-width);
-    margin: 0 auto;
-}
-
-@media(max-width: 1340px) {
-    .row {
-        max-width: 1100px;
-    }
-}
-
-@media(max-width: 1240px) {
-    .row {
-        padding: 0 var(--gutter-medium);
-    }
-}
-
-@media(max-width: 600px) {
-    .row {
-        padding: 0 var(--gutter-small);
-    }
-}
-
-section {
-    padding: var(--gutter-huge) 0;
-    border-bottom: var(--border-light);
-}
-
-img {
-    object-fit: contain;
-    max-width: 100%;
-}
-
-/* --------------------------------------- */
-/* ----- Headlines and Paragraphs ----- */
-/* --------------------------------------- */
-
-h1,
-h2,
-h3 {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    line-height: var(--line-height-small);
-    color: var(--white);
-}
-
-.heading-primary {
-    line-height: 1;
-    font-size: var(--font-size-huge);
-    font-weight: 400;
-}
-
-@media(max-width: 900px) {
-    .heading-primary {
-        font-size: 6.5rem;
-    }
-}
-
-h2 {
-    font-size: var(--font-size-large);
-    margin-bottom: var(--gutter-medium);
-}
-
-h2::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 10rem;
-    background: var(--pink);
-    margin: var(--gutter-small) 0;
-}
-
-h3 {
-    font-size: var(--font-size-medium-1);
-    margin-bottom: var(--gutter-small);
-}
-
-@media(max-width: 500px) {
-    .heading-primary {
-        font-size: var(--font-size-large);
-    }
-
-    h2 {
-        font-size: var(--font-size-medium-1);
-    }
-
-    h3 {
-        font-size: var(--font-size-medium);
-    }
-}
-
-p {
-    margin: var(--gutter-small-1) 0;
-}
-
-@media(max-width: 900px) {
-    p { 
-        max-width: var(--container-small-width);
-    }
-}
-
-/* --------------------------------------- */
-/* ----- Buttons and Links ----- */
-/* --------------------------------------- */
-
-a {
-    color: var(--white);
-    font-weight: 400;
-    font-family: 'Jost', sans-serif;
-    transition: all .2s;
-    outline: 2px solid transparent;
-    text-decoration: none;
-}
-
-.btn {
-    position: relative;
-    display: inline-block;
-    padding: 1rem 4.2rem;
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid  var(--pink);
-    font-weight: 400;
-}
-
-.btn--pink {
-    background: var(--pink);
-    transition: all 0.2s;
-}
-
-.btn--pink:hover {
-    background: transparent;
-    color: var(--pink);
-}
-
-/* --------------------------------------- */
-/* ----- Navigation ----- */
-/* --------------------------------------- */
-
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: var(--gutter-normal) 0;
-}
-
-.nav__items {
-    display: flex;
-    list-style: none;
-}
-
-.nav__item:not(:last-child) {
-    margin-right: var(--gutter-medium);
-}
-
-.nav__link:hover {
-    color: var(--pink);
-}
-
-/* --------------------------------------- */
-/* ----- Teaching Videos Page Additions ----- */
-/* --------------------------------------- */
-
-/* Button for "View Teaching Videos" and "Back to Home" */
+/* ----- Buttons ----- */
 .video-btn {
     display: inline-block;
     padding: 1rem 4.2rem;
     background: var(--pink);
     color: var(--white);
     text-decoration: none;
-    font-family: 'Jost', sans-serif;
-    font-size: var(--font-size-small);
     border: 1px solid var(--pink);
-    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: all 0.3s;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: var(--gutter-small);
 }
+.video-btn:hover { background: transparent; color: var(--pink); }
 
-.video-btn:hover {
-    background: transparent;
-    color: var(--pink);
-}
+.link__text { color: var(--white); text-decoration: none; font-size: 1.8rem; }
+.link__text:hover { color: var(--pink); }
 
-/* Responsive container for YouTube Videos */
-.teaching__video {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-    margin: var(--gutter-small) 0 var(--gutter-medium);
-    border: var(--border-light);
-    background: var(--black);
-}
+/* ----- Unity Game Layout ----- */
+.unity-game-layout { display: flex; gap: 5rem; align-items: flex-start; margin-bottom: 25rem; }
+.unity-game__info { flex: 1; }
+.unity-game__preview { flex: 1.5; }
+.unity-game__skills { list-style: none; margin: 2rem 0; }
+.unity-game__skills li::before { content: '• '; color: var(--pink); }
+.unity-game__icon { width: 150px; margin-top: 3rem; border-radius: 15px; overflow: hidden; }
+.game-img { width: 100%; border-radius: 4px; border: var(--border-light); }
 
-.teaching__video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+/* ----- Prototype Window ----- */
+.prototype-window { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; overflow: hidden; margin: 4rem 0; }
+.window-header { background: #222; padding: 12px; display: flex; align-items: center; }
+.dot { height: 12px; width: 12px; border-radius: 50%; margin-right: 8px; }
+.red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+.prototype-embed { position: relative; padding-bottom: 60%; height: 0; }
+.prototype-embed iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; }
 
-/* --------------------------------------- */
-/* ----- Header & Work Section ----- */
-/* --------------------------------------- */
-
-.header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.header__text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.work__box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25rem;
-}
-
-.back-to-top {
-    position: fixed;
-    bottom: 4rem;
-    right: 4rem;
-    height: 5.5rem;
-    width: 5.5rem;
-    background-color: var(--pink);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-/* --------------------------------------- */
-/* ----- Video Page Skills List ----- */
-/* --------------------------------------- */
-
-.skills-box {
-    margin: 2rem 0;
-    padding: var(--gutter-small);
-    border-left: 2px solid var(--pink); /* Vertical pink accent line */
-    background: rgba(255, 50, 88, 0.05); /* Subtle pink tint */
-}
-
-.skills-box h4 {
-    font-family: 'Jost', sans-serif;
-    font-size: var(--font-size-small);
-    color: var(--white);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.skills-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.skills-list li {
-    font-size: 1.6rem;
-    color: var(--white-1);
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 2.5rem;
-}
-
-/* Custom pink bullet points */
-.skills-list li::before {
-    content: '→';
-    color: var(--pink);
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-}
-
-/* --------------------------------------- */
-/* ----- Interactive Prototype Spacing ----- */
-/* --------------------------------------- */
-
-/* Ensures the Figma embed container fills the row and adds top space */
-.prototype-embed-container {
-    width: 100%;
-    margin-top: var(--gutter-normal); /* Adds space between text and embed */
-    background: var(--black);
-    border: var(--border-light);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-/* Optional: Forces the iframe to be responsive on smaller screens */
-@media(max-width: 600px) {
-    .prototype-embed-container iframe {
-        height: 400px; /* Shorter height for mobile phones */
-    }
-}
-/* --------------------------------------- */
-/* ----- Professional Prototype Window ----- */
-/* --------------------------------------- */
-
-.project-subtitle {
-    color: var(--pink);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-top: -2rem;
-    margin-bottom: 3rem;
-}
-
-.prototype-window {
-    background: #1a1a1a; /* Dark gray window background */
-    border: 1px solid #333;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 4rem 0;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* Adds depth */
-}
-
-.window-header {
-    background: #222;
-    padding: 12px 18px;
-    display: flex;
-    align-items: center;
-}
-
-.window-header .dot {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-/* Common browser window control colors */
-.dot.red { background-color: #ff5f56; }
-.dot.yellow { background-color: #ffbd2e; }
-.dot.green { background-color: #27c93f; }
-
-.window-title {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.2rem;
-    color: #888;
-    font-family: var(--font-stack);
-}
-
-.prototype-embed {
-    position: relative;
-    padding-bottom: 65%; /* Controls the aspect ratio of the embed area */
-    height: 0;
-}
-
-.prototype-embed iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+/* ----- Mobile Fixes ----- */
+@media(max-width: 900px) {
+    .unity-game-layout { flex-direction: column; }
+    h2 { font-size: 3.6rem; }
 }
