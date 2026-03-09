@@ -1,161 +1,467 @@
 <!-- 
-  Portfolio Template designed and developed by Nisar Hassan Naqvi
-  Github Repo: https://github.com
-  Customized by Ryan T Regala
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan T Regala | Portfolio</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body id="top">
 
-  <!-- ***** Navigation ***** -->
-  <nav class="nav row">
-    <ul class="nav__items">
-      <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-      <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-      <li class="nav__item"><a href="#teaching" class="nav__link">Teaching</a></li>
-      <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-    </ul>
-  </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Ryan Regala | A Video Game Designer/Frontend Developer.
+  </title>
+
+  <meta name="description" content="Cognitive Science Student at UC San Diego, I have developed a few data science projects and on a video game.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Ryan Regala, Game Development, UI/UX Design, C#, C++, Java, Python" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
 
   <!-- ***** Header ***** -->
-  <header class="header">
+
+  <header class="header" role="banner" id="top">
     <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#teaching" class="nav__link">Teaching & Mentorship</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">Ryan Tregala</h1>
-        <p>Software Developer & Instructional Designer</p>
-        <a href="#work" class="video-btn">View My Work</a>
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Ryan Regala</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Programmer, UX Designer, and Software Developer based in La Jolla, California.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- ***** Work Section ***** -->
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Featured Projects</h2>
+  <main role="main">
 
-        <!-- PROJECT 1: Unity Game (Split Layout) -->
-        <div class="work__box unity-game-layout">
-          <div class="unity-game__info">
-            <h3>Native vs. Invasive Species</h3>
-            <p>A game similar to Plants vs. Zombies, but with native species vs. invasive species battling in a tower defense format. Built in Unity.</p>
-            <ul class="unity-game__skills">
-              <li>C#</li><li>Unity</li><li>UI Design</li><li>Debugging</li>
-            </ul>
-            <a href="https://github.com" class="link__text">Play Game <span>&rarr;</span></a>
-            <div class="unity-game__icon">
-              <!-- Ensure this image exists in your folder -->
-              <img src="./images/game-icon.png" alt="Game Icon">
-            </div>
-          </div>
-          <div class="unity-game__preview">
-            <img src="./images/game-screenshot.jpg" alt="Unity Gameplay" class="game-img">
+    <!-- ***** Work ***** -->
+
+<section class="work" id="work">
+  <div class="row">
+    <h2>My Work</h2>
+    <div class="work__boxes">
+
+      <!-- Project 1 -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>Habitat Defenders</h3>
+          <p>
+            A game similar to Plants vs. Zombies, but with native species vs. invasive species battling in a tower defense format. This is an environmentally themed game built in Unity.
+          </p>
+          <ul class="work__list">
+            <li>C#</li>
+            <li>Unity</li>
+            <li>UI Design</li>
+            <li>Debugging</li>
+          </ul>
+
+          <div class="work__links">
+            <a href="https://ndtech.itch.io/habitat-defenders-2025" class="link__text" target="_blank" title="Play Habitat Defenders">
+              Play Game <span>&rarr;</span>
+            </a>
+            <a href="https://ndtech.itch.io/habitat-defenders-2025" target="_blank" title="Play Habitat Defenders">
+              <img src="images/screenshot-2025-08-22-at-105735.png" class="work__code" alt="Itch.io Page">
+            </a>
           </div>
         </div>
-
-        <!-- PROJECT 2: Interactive Prototype (Window Layout) -->
-        <div class="work__box">
-          <div class="work__text">
-            <h3>Interactive UI Prototype</h3>
-            <p><strong>The Challenge:</strong> Designing an intuitive interface for new users to navigate complex data.</p>
-            <p><strong>The Solution:</strong> A high-fidelity prototype focused on clear visual hierarchy.</p>
-            
-            <div class="prototype-window">
-              <div class="window-header">
-                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                <span class="window-title">Inspo - Interactive Sketches</span>
-              </div>
-              <div class="prototype-embed">
-                <iframe src="https://embed.figma.com" allowfullscreen></iframe>
-              </div>
-            </div>
-            <a href="https://www.figma.com" target="_blank" class="video-btn">Open Full Prototype ↗</a>
-          </div>
+        <div class="work__image-box">
+          <img src="./images/screenshot-2025-08-22-at-105011.png" class="work__image" alt="Habitat Defenders Screenshot">
         </div>
       </div>
-    </section>
 
-    <!-- ***** About Me ***** -->
+      <!-- Project 2 -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>LeBron James Shooting Accuracy (2023)</h3>
+          <p>
+            Analyzed NBA shooting data to uncover trends in performance and accuracy.
+          </p>
+          <ul class="work__list">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+          </ul>
+
+          <div class="work__links">
+            <a href="https://github.com/ryantregala32/Lebron_James_Shooting_Accuracy" class="link__text" target="_blank" title="View Source Code">
+              View Source Code <span>&rarr;</span>
+            </a>
+            <a href="https://github.com/ryantregala32/Lebron_James_Shooting_Accuracy" target="_blank" title="View Source Code">
+              <img src="./images/github.svg" class="work__code" alt="GitHub Repository">
+            </a>
+          </div>
+        </div>
+        <div class="work__image-box">
+          <img src="./images/screenshot-2025-08-08-081259.png" class="work__image" alt="LeBron James Shooting Accuracy Project">
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>Anime Ratings Predictor</h3>
+          <p>
+            Built a machine learning model to predict anime ratings based on MyAnimeList user data.
+          </p>
+          <ul class="work__list">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Scikit-learn</li>
+          </ul>
+
+          <div class="work__links">
+            <a href="https://github.com/ryantregala32/COGS108_Repo" class="link__text" target="_blank" title="View Source Code">
+              View Source Code <span>&rarr;</span>
+            </a>
+            <a href="https://github.com/ryantregala32/COGS108_Repo" target="_blank" title="View Source Code">
+              <img src="./images/github.svg" class="work__code" alt="GitHub Repository">
+            </a>
+          </div>
+        </div>
+        <div class="work__image-box">
+          <img src="./images/screenshot-2025-08-08-082353.png" class="work__image" alt="Anime Ratings Predictor Project">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project 4: Figma Prototype -->
+      <div class="work__box">
+        <div class="work__text">
+          <h3>Interactive UI Prototype of the Nature Conservancy</h3>
+          <p>
+            A high-fidelity interactive prototype designed in Figma, focusing on user flow and intuitive navigation for a mobile application.
+            For this project, we focused on creating a user interface for the mobile app "The Nature Conservancy" so that it can be reached
+            out to a wider audience and promote environmental awareness.
+          </p>
+          <ul class="work__list">
+            <li>Figma</li>
+            <li>UI/UX Design</li>
+            <li>Prototyping</li>
+            <li>UI/UX Research</li>
+          </ul>
+        </div>
+        <div class="work__image-box">
+          <!-- PASTE YOUR FIGMA EMBED CODE BELOW THIS LINE -->
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://embed.figma.com/design/orbeyzmmCTq4nBya7BXNIt/INSPO---Sketches?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+          <!-- Tip: Change width="800" to width="100%" in your figma code for a better fit -->
+        </div>
+      </div>
+   
+    <!-- ***** About ***** -->
+
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I’m a Computer Science enthusiast passionate about creating immersive video game experiences. 
-              Currently a senior at <strong>UCSD</strong> studying Cognitive Science with a specialization in Design and Interaction.
+              I’m a Computer Science enthusiast passionate about creating engaging 
+              and immersive video game experiences. 
+              I love combining programming, game design, and UI/UX to craft gameplay 
+              that feels intuitive and exciting. Alongside game development, 
+              I enjoy working on frontend systems, interactive interfaces, and tools that boost efficiency for both developers and players.
+              Additionally, I go to UCSD where I study Cognitive Science with a specialization in Design and Interaction.
+              I currently am a senior and an intern at the Serious Games for Global Impact Program funded by Qualcomm Institute.
+              I was also an intern at the Neurodiversity in Tech Program where I helped create the game Habitat Defenders.
             </p>
-            <p>
-              I am an intern at the Serious Games for Global Impact Program at the Qualcomm Institute and previously helped create <em>Habitat Defenders</em> during my internship at the Neurodiversity in Tech Program.
-            </p>
-            <a href="https://drive.google.com" target="_blank" class="btn">My Resume</a>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/1uhem2ygpoWrtaFlPfATymukdOTFAn4QC/view?usp=sharing" class="btn">My Resume</a>
           </div>
+
           <div class="about__photo-container">
-            <img class="about__photo" src="./images/20241031_093748.jpg" alt="Ryan Tregala" />
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/20241031_093748.jpg" alt="" />
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Teaching Section ***** -->
-    <section class="teaching" id="teaching">
-      <div class="row">
-        <h2>Teaching & Mentorship</h2>
-        <div class="teaching__content">
-          <div class="teaching__text">
-            <p>
-              I enjoy supporting learning through peer collaboration and instructional demonstrations. I focus on breaking down programming concepts into clear, step-by-step processes for beginners.
-            </p>
-            <a href="videos.html" class="video-btn">View Full Teaching Portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Contact ***** -->
-    <section class="contact" id="contact">
-      <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <p>Have a question or want to work together? Feel free to reach out!</p>
-          <a href="mailto:ryanregala512@gmail.com" class="btn">ryanregala512@gmail.com</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- ***** Teaching & Mentorship ***** -->
+<section class="teaching" id="teaching">
+  <div class="row">
+    <h2>Teaching & Mentorship</h2>
+
+    <div class="teaching__content">
+      <div class="teaching__text">
+        <p>
+          While I do not have formal teaching experience, I enjoy supporting learning
+          through peer collaboration and instructional demonstrations. I focus on
+          breaking down programming concepts into clear, step-by-step processes
+          that are easy for beginners to follow.
+        </p>
+
+        <h3>Instructional Demonstration</h3>
+        <p>
+          This video demonstrates a step-by-step sequence for creating a triangle
+          using <strong>Snap!</strong>, a block-based programming language.
+          The demonstration emphasizes sequencing, repetition, and computational
+          thinking fundamentals.
+      </p>
+
+        <div class="teaching__video">
+          <iframe
+            src="https://www.youtube.com/embed/e9J1iF7dnN8"
+            title="Sequence of making a triangle on Snap!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+         <!-- Video 2 -->
+        <p>
+          Demonstration titled <em>“Show What You Know Assignment”</em>, an exercise
+          designed to help learners reflect on and apply their knowledge.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://www.youtube.com/embed/Ht50_RxpgWM"
+            title="Show What You Know Assignment"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+    
+        <!-- Video 3 -->
+        <p>
+          Demonstration titled <em>“Teaching Programming Portfolio Lesson Plan”</em>, a lesson plan
+          designed to help people on scratch using the animal parade.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/Rp8CYsCYBXc"
+            title="Teaching Programming Portfolio Lesson Plan"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        
+        <!-- Video 4 --> 
+        <p>
+          Demonstration titled <em>“Nested Repeat on Snap!”</em>, a lesson plan designed to make a mouse create a 
+          octagon using nested loops on Snap.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/2A85roWGo0E"
+            title="Nested Repeat on Snap!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+    <!-- Video 5 --> 
+        <p>
+          Demonstration titled <em>“Monkey Banana game”</em>, a lesson plan designed using snap to use
+          different parts such as broadcast and when I receive.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/gvvzbiipSno"
+            title="Monkey Banana game"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Video 6 --> 
+        <p>
+          Demonstration titled <em>“EDS 124BR Week 4 Show What You Know”</em>, a lesson plan designed using snap to use
+          different parts such as the repeats and variables to make shapes.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/3THEuH1O308"
+            title="EDS 124BR Week 4 Show What You Know"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+         <!-- Video 7 --> 
+        <p>
+          Demonstration titled <em>“Conditional Loop EDS 124BR”</em>, a lesson plan designed using snap to use
+          conditional loops.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/cBpX8SfeQB8"
+            title="Conditional Loop EDS 124BR"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Video 8 -->
+         <p>
+          Demonstration titled <em>“EDS 124BR If-Else Program”</em>, a lesson plan designed using snap to use
+          an if-else statement.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/XmJLZTveF8Q"
+            title="EDS 124BR If-Else Program"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Video 9 -->
+         <p>
+          Demonstration titled <em>“Nested If Else Statement for EDS 124BR”</em>, a lesson plan designed using snap to use
+          an nested if-else statement.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/_of9DWy8fhQ"
+            title="Nested If Else Statement for EDS 124BR"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Video 10 -->
+         <p>
+          Demonstration titled <em>“Compound Conditionals”</em>, a lesson plan designed using snap to compare and
+          contrast conditions using and, or, and if and else.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/_OxFnaioekA"
+            title="Compound Conditionals"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+         <!-- Video 11 -->
+         <p>
+          Demonstration titled <em>“EDS 124BR Abstraction”</em>, a lesson plan designed using snap to make a picture using abstraction.
+        </p>
+        <div class="teaching__video">
+          <iframe
+            src="https://youtube.com/embed/JJDpC12g5FQ"
+            title="EDS 124BR Abstraction"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <h3>Skills Demonstrated</h3>
+        <ul>
+          <li>Instructional design and sequencing</li>
+          <li>Beginner-focused technical communication</li>
+          <li>Computational thinking</li>
+          <li>Explaining programming and problem-solving visually</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Here's my contact information if you just want to say hi or keep in-touch.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:ryanregala512@gmail.com" class="btn">ryanregala512@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ***** Footer ***** -->
+
   <footer role="contentinfo" class="footer">
     <div class="row">
+      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://github.com/" title="Link to Github Profile">
+          <a href="https://github.com/ryantregala32/" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com">
+          <a href="https://www.linkedin.com/in/ryan-t-regala/">
             <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
-        &copy; 2026 Ryan T Regala. Template designed by <a href="https://nisar.dev" class="link">Nisar</a>.
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
       </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
-
   <script src="./index.js"></script>
 </body>
+
 </html>
