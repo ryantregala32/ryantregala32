@@ -273,11 +273,12 @@ a{
 }
 
 .work__text{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    flex:0 0 30%;
 }
 
+.nature-prototype{
+    align-items:center;
+}
 .work__list{
     list-style-position:inside;
     margin-bottom:var(--gutter-normal);
