@@ -290,6 +290,17 @@ a{
     flex-direction:column;
     justify-content:center;
 }
+
+.nature-prototype .work__image-box {
+  display: flex;
+  justify-content: center;
+}
+
+.nature-prototype iframe {
+  max-width: 900px;
+  width: 100%;
+}
+
 .work__list{
     list-style-position:inside;
     margin-bottom:var(--gutter-normal);
