@@ -41,3 +41,44 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+const roles = [
+  "Game Developer",
+  "Gameplay Programmer",
+  "Cognitive Science @ UC San Diego",
+  "UI / UX Enthusiast"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingElement = document.getElementById("typing");
+
+function typeEffect() {
+  if (!typingElement) return;
+
+  let currentRole = roles[roleIndex];
+
+  if (!isDeleting) {
+    typingElement.textContent = currentRole.substring(0, charIndex++);
+  } else {
+    typingElement.textContent = currentRole.substring(0, charIndex--);
+  }
+
+  let speed = isDeleting ? 50 : 100;
+
+  if (!isDeleting && charIndex === currentRole.length + 1) {
+    speed = 1500;
+    isDeleting = true;
+  } 
+  else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
+    speed = 500;
+  }
+
+  setTimeout(typeEffect, speed);
+}
+
+typeEffect();
