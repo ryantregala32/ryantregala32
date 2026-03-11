@@ -77,32 +77,46 @@
     <div class="work__boxes">
 
       <!-- Project 1 -->
-      <div class="work__box">
-        <div class="work__text">
-          <h3>Habitat Defenders</h3>
-          <p>
-            A game similar to Plants vs. Zombies, but with native species vs. invasive species battling in a tower defense format. This is an environmentally themed game built in Unity.
-          </p>
-          <ul class="work__list">
-            <li>C#</li>
-            <li>Unity</li>
-            <li>UI Design</li>
-            <li>Debugging</li>
-          </ul>
+<div class="work__box">
+  <div class="work__text">
+    <h3>Habitat Defenders</h3>
+    <p>
+      A game similar to Plants vs. Zombies, but with native species vs. invasive species battling in a tower defense format. This is an environmentally themed game built in Unity.
+    </p>
+    <ul class="work__list">
+      <li>C#</li>
+      <li>Unity</li>
+      <li>UI Design</li>
+      <li>Debugging</li>
+    </ul>
 
-          <div class="work__links">
-            <a href="https://ndtech.itch.io/habitat-defenders-2025" class="link__text" target="_blank" title="Play Habitat Defenders">
-              Play Game <span>&rarr;</span>
-            </a>
-            <a href="https://ndtech.itch.io/habitat-defenders-2025" target="_blank" title="Play Habitat Defenders">
-              <img src="images/screenshot-2025-08-22-at-105735.png" class="work__code" alt="Itch.io Page">
-            </a>
-          </div>
-        </div>
-        <div class="work__image-box">
-          <img src="./images/screenshot-2025-08-22-at-105011.png" class="work__image" alt="Habitat Defenders Screenshot">
-        </div>
-      </div>
+    <div class="work__links">
+      <a href="https://ndtech.itch.io/habitat-defenders-2025" class="link__text" target="_blank" title="Play Habitat Defenders">
+        Play Game <span>&rarr;</span>
+      </a>
+      <a href="https://ndtech.itch.io/habitat-defenders-2025" target="_blank" title="Play Habitat Defenders">
+        <img src="images/screenshot-2025-08-22-at-105735.png" class="work__code" alt="Itch.io Page">
+      </a>
+    </div>
+  </div>
+
+  <div class="work__image-box">
+    <!-- Screenshot -->
+    <img id="project-screenshot" src="./images/screenshot-2025-08-22-at-105011.png" class="work__image" alt="Habitat Defenders Screenshot">
+
+    <!-- Trailer Video (hidden initially) -->
+    <video id="project-trailer" controls class="work__video" style="display:none;">
+      <source src="./videos/NDTech Trailer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+
+    <!-- Arrow Button -->
+    <button id="switch-button" class="switch-button" aria-label="View Trailer">
+      &#8594; <!-- right arrow -->
+    </button>
+  </div>
+</div>
 
       <!-- Project 2 -->
       <div class="work__box">

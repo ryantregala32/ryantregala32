@@ -345,6 +345,37 @@ a{
     margin-bottom:var(--gutter-normal);
 }
 
+.work__image-box {
+    position: relative;
+}
+
+.work__video, 
+#project-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.5s ease; /* smooth fade */
+}
+
+.work__video {
+    display: none; /* hidden initially */
+    margin-top: 0.5rem;
+}
+
+.switch-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
 @media(min-width:901px){
     .work__image-box{
         flex:1;

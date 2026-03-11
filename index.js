@@ -86,3 +86,30 @@ function typeEffect() {
 typeEffect();
 
 });
+
+
+const screenshot = document.getElementById('project-screenshot');
+const trailer = document.getElementById('project-trailer');
+const button = document.getElementById('switch-button');
+
+button.addEventListener('click', () => {
+  if (screenshot.style.display !== 'none') {
+    screenshot.style.opacity = 0;
+    setTimeout(() => {
+      screenshot.style.display = 'none';
+      trailer.style.display = 'block';
+      trailer.style.opacity = 0;
+      setTimeout(() => { trailer.style.opacity = 1; }, 50);
+    }, 500);
+    button.innerHTML = '&#8592;';
+  } else {
+    trailer.style.opacity = 0;
+    setTimeout(() => {
+      trailer.style.display = 'none';
+      screenshot.style.display = 'block';
+      screenshot.style.opacity = 0;
+      setTimeout(() => { screenshot.style.opacity = 1; }, 50);
+    }, 500);
+    button.innerHTML = '&#8594;';
+  }
+});
