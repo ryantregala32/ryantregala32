@@ -42,6 +42,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+
 const roles = [
   "Game Developer",
   "Gameplay Programmer",
@@ -82,3 +84,5 @@ function typeEffect() {
 }
 
 typeEffect();
+
+});

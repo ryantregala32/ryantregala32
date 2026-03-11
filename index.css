@@ -247,10 +247,14 @@ a{
 }
 
 .header__text p{
-    margin:1.5rem 0 3.5rem;
-    max-width:var(--container-medium-width);
+    margin:2rem 0 4rem;
     font-family:'Jost',sans-serif;
     font-size:var(--font-size-medium);
+}
+
+#typing{
+    display: block;
+    min-height: 3rem;
 }
 
 /* --------------------------------------- */
