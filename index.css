@@ -347,6 +347,7 @@ a{
 
 .work__image-box {
     position: relative;
+    max-width: 600px;
 }
 
 .work__video, 
@@ -363,14 +364,17 @@ a{
 }
 
 .switch-button {
-    background-color: rgba(0,0,0,0.6); /* semi-transparent background */
+   position: absolute;
+  bottom: 10px;             /* position over image/video */
+  right: 10px;
+  z-index: 3;               /* above image/video */
+  background-color: rgba(0,0,0,0.6);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 2; /* make sure it’s on top */
 }
 
 @media(min-width:901px){
