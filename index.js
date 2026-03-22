@@ -48,7 +48,9 @@ const roles = [
   "Game Developer",
   "Gameplay Programmer",
   "Cognitive Science @ UC San Diego",
-  "UI / UX Enthusiast"
+  "QA Tester",
+  "UI Developer",
+  "STEM Education"
 ];
 
 let roleIndex = 0;
